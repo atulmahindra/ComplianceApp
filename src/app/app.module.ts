@@ -9,10 +9,12 @@ import { FooterComponent } from './footer/footer.component';
 import { BannerComponent } from './banner/banner.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BlogpostModule } from './blogpost/blogpost.module';
+import { FormsModule }   from '@angular/forms';
 import { CmspageModule } from './cmspage/cmspage.module';
 import { TestComponent } from './test/test.component';
 import { MalihuScrollbarModule } from 'ngx-malihu-scrollbar';
 import { ComplianceDetailsComponent } from './compliance-details/compliance-details.component';
+import { SearchPipe } from './search.pipe';
 
 
 @NgModule({
@@ -23,10 +25,12 @@ import { ComplianceDetailsComponent } from './compliance-details/compliance-deta
     BannerComponent,
     PageNotFoundComponent,
     TestComponent,
-    ComplianceDetailsComponent
+    ComplianceDetailsComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpClientModule,
     BlogpostModule,
     CmspageModule,
