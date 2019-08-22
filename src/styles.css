@@ -13592,6 +13592,16 @@ select.dropdown option {
   border-bottom: 1px solid #E3E3E3;
   color: #253238; }
 
+.info {
+  display: none; }
+
+.info:nth-child(1) {
+  display: block; }
+
+.current > .card > .action_title {
+  background-color: #4052B5;
+  color: #fff; }
+
 .action_title.active_title {
   background-color: #4052B5;
   color: #fff; }

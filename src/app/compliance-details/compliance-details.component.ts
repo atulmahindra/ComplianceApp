@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from '../services/common.service';
 
 @Component({
   selector: 'app-compliance-details',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComplianceDetailsComponent implements OnInit {
 
+  search_res : any = '';
   public search:any = '';
   locked: any[] = [];
-  constructor() { }
+  constructor(public commonService:CommonService) { }
 
   ngOnInit() {
     this.locked = [
@@ -24,6 +26,12 @@ export class ComplianceDetailsComponent implements OnInit {
       
   ]
   }
+  onToolbarMenuToggle(){
+    console.log('toggle', this.commonService.isMenuOpen);
+    this.commonService.toggleMenu();
+  }
   
-
+  search_bt(query){
+    this.search_res = query;
+  }
 }

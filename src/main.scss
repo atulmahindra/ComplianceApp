@@ -4896,6 +4896,10 @@ span{    font-size: 0.70rem;
 span{padding-right: 5px;}
 }
 .action_title{font-size: $font-size-base;font-weight: $font-weight-bold;text-transform: uppercase;padding: 16px 26px 16px 26px;border-bottom: 1px solid #E3E3E3;color:$color_this;}
+
+.info{display: none;}
+.info:nth-child(1){display: block;}
+.current > .card > .action_title{background-color:$color-bt-blue;color:#fff;}
 .action_title.active_title{background-color:$color-bt-blue;color:#fff; }
 .action_title.pend_action{color: #EB2F2F;}
 .action_inn_title{font-size: $font-size-base;font-weight: $font-weight-bold;text-transform: uppercase;padding: 10px 20px 10px 20px;border-bottom: 1px solid #E3E3E3;color:$color_this;background-color: $color-title-bluer;}

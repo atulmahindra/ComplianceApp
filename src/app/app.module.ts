@@ -10,6 +10,7 @@ import { BannerComponent } from './banner/banner.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BlogpostModule } from './blogpost/blogpost.module';
 import { FormsModule }   from '@angular/forms';
+import {NgxPaginationModule} from 'ngx-pagination';
 import { CmspageModule } from './cmspage/cmspage.module';
 import { TestComponent } from './test/test.component';
 import { MalihuScrollbarModule } from 'ngx-malihu-scrollbar';
@@ -34,6 +35,7 @@ import { SearchPipe } from './search.pipe';
     HttpClientModule,
     BlogpostModule,
     CmspageModule,
+    NgxPaginationModule,
     NgbModule,
     MalihuScrollbarModule.forRoot(),
     AppRoutingModule
