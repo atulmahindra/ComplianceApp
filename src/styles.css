@@ -9400,7 +9400,7 @@ nav.navbar a.menu-btn:hover {
 
 .side-navbar.shrink i {
   display: block;
-  margin-right: 0;
+  margin: 0 auto 10px;
   font-size: 1rem; }
 
 .side-navbar.shrink .arrow {
@@ -13686,6 +13686,15 @@ select.form-control.fill_drop option {
       border-radius: 5px;
       padding: 2px 5px 4px 5px;
       font-weight: 600; }
+
+.mCSB_container {
+  width: auto !important; }
+
+.shrink .vaayu_logo img {
+  display: none; }
+
+.shrink #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
+  margin-left: 0px; }
 
 /*Compliance end*/
 /*e*/
